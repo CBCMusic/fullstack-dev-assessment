@@ -61,4 +61,4 @@ Navigate to http://localhost:3000 and you should see the application running.
 
 If you've completed the assessment and would like to demonstrate some additional skills, try the following:
 
-- Modify `createProgramListItem` in `static/main.js` to wrap the list item content in a link that opens a CBC Listen program detail page in a new tab. The url convention for program detail pages is `https://www.cbc.ca/listen/live-radio/1-{showID}-{showSlugTitle}`. For example: https://www.cbc.ca/listen/live-radio/1-63-the-current.
+- Modify `createProgramListItem` in `static/main.js` to wrap the list item content in a link that opens a CBC Listen program detail page in a new tab. The url convention for program detail pages is `https://www.cbc.ca/listen/live-radio/1-{showID}-{showSlugTitle}`. For example: https://www.cbc.ca/listen/live-radio/1-63-the-current. You will need to modify the `Program` class and the response of `/schedule/:regionID` in `index.js` to return the additional properties.
