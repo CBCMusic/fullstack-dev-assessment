@@ -23,21 +23,10 @@ class Program {
   }
 }
 
-/**
- * Requests a JSON response from an endpoint.
- * @param {string} url - the url to request 
- * @param {function(error, response)} callback - a callback with the request response 
- */
-const requestJSON = (url, callback) => {
-  request(url, { json: true }, (error, response, body) => callback(body))
-}
-
 // This endpoint should consume https://cbc.ca/listen/api/v1/program-queue/1/:regionID
 // where regionID is one of the values of the select element
 // eg. https://cbc.ca/listen/api/v1/program-queue/1/toronto
 app.get('/schedule/:regionID', (req, res) => {
-  // HINT: the Program class will construct a client friendly
-  // response when passed the properties defined in the constructor.
 })
 
 app.use('/', express.static(path.join(__dirname, './static')))

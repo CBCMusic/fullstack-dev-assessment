@@ -40,9 +40,8 @@ const createProgramListItem = (programTitle, hostName, programImage, airdate) =>
 const fetchSchedule = (selectedRegion) => {
   return fetch('/schedule/' + selectedRegion)
   .then(res => res.json())
-  // HINT: if you are not familiar with Promises, they can be consumed like so:
-  // fetchSchedule(region)
-  // .then(schedule => { ... })
+  // HINT: if you are not familiar with Promises, please refer to:
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises
 }
 
 const populateSchedule = () => {
